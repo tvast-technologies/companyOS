@@ -1,0 +1,188 @@
+views:
+  - type: table
+    name: PMS
+    filters:
+      and:
+        - Is == "PMS"
+    order:
+      - file.name
+      - Project
+      - Status
+      - Priority
+      - Due
+      - Topics
+      - tags
+      - Kind
+      - Parent
+      - file.ctime
+    columnSize:
+      note.tags: 141
+      note.Kind: 123
+      note.Parent: 168
+  - type: table
+    name: Overview
+    filters:
+      and:
+        - Is == "PMS"
+        - Project == this.file
+    order:
+      - Project
+      - file.name
+      - Status
+      - Priority
+      - Due
+      - Topics
+      - tags
+      - Kind
+      - Parent
+      - file.ctime
+    columnSize:
+      note.tags: 141
+      note.Kind: 123
+      note.Parent: 168
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - Parent
+      - Project
+      - Kind
+      - file.backlinks
+      - file.basename
+      - file.ctime
+      - file.embeds
+      - file.ext
+      - file.folder
+      - file.fullname
+      - file.links
+      - file.mtime
+      - file.path
+      - file.size
+      - file.tags
+      - Cover
+      - Description
+      - Due
+      - Is
+      - Priority
+      - Status
+      - tags
+      - Topics
+    sort:
+      - property: Kind
+        direction: DESC
+    columnSize:
+      note.Parent: 121
+      note.Project: 137
+      file.backlinks: 303
+      file.basename: 141
+      note.Is: 90
+  - type: table
+    name: Projects
+    filters:
+      and:
+        - Is == "PMS"
+        - Kind == ["Project"]
+        - IsTemplate != "Yes"
+    order:
+      - file.name
+      - Project
+      - Status
+      - Priority
+      - Due
+      - Topics
+      - tags
+      - Kind
+      - Parent
+      - file.ctime
+    columnSize:
+      note.tags: 141
+      note.Kind: 123
+      note.Parent: 168
+  - type: table
+    name: EpicsView
+    filters:
+      and:
+        - Is == "PMS"
+        - Project == this.file
+        - Kind == ["Epic"]
+    order:
+      - file.name
+      - Project
+      - Status
+      - Priority
+      - Due
+      - Topics
+      - tags
+      - Kind
+      - Parent
+      - file.ctime
+    columnSize:
+      note.tags: 141
+      note.Kind: 123
+      note.Parent: 168
+  - type: table
+    name: StoriesView
+    filters:
+      and:
+        - Is == "PMS"
+        - Project == this.file
+        - Kind == ["Story"]
+    order:
+      - file.name
+      - Project
+      - Status
+      - Priority
+      - Due
+      - Topics
+      - tags
+      - Kind
+      - Parent
+      - file.ctime
+    columnSize:
+      note.tags: 141
+      note.Kind: 123
+      note.Parent: 168
+  - type: table
+    name: TasksView
+    filters:
+      and:
+        - Is == "PMS"
+        - Project == this.file
+        - Kind == ["Task"]
+    order:
+      - file.name
+      - Project
+      - Status
+      - Priority
+      - Due
+      - Topics
+      - tags
+      - Kind
+      - Parent
+      - file.ctime
+    columnSize:
+      note.tags: 141
+      note.Kind: 123
+      note.Parent: 168
+  - type: table
+    name: BugsView
+    filters:
+      and:
+        - Is == "PMS"
+        - Project == this.file
+        - Kind == ["Bug"]
+    order:
+      - file.name
+      - Project
+      - Status
+      - Priority
+      - Due
+      - Topics
+      - tags
+      - Kind
+      - Parent
+      - file.ctime
+    columnSize:
+      note.tags: 141
+      note.Kind: 123
+      note.Parent: 168
