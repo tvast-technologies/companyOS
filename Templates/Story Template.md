@@ -11,5 +11,6 @@ Parent: "[[Epic Template]]"
 Project: "[[Project Template]]"
 Is: PMS
 IsTemplate: Yes
+AssignedTo:
 ---
  

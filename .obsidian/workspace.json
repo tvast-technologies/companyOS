@@ -98,7 +98,7 @@
               "type": "bases",
               "state": {
                 "file": "AllBases.base",
-                "viewName": "EpicsView"
+                "viewName": "PMS"
               },
               "icon": "lucide-table",
               "title": "AllBases"
@@ -264,19 +264,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "56719aefcc5e474a",
+  "active": "f79b3d523b7fd504",
   "lastOpenFiles": [
-    "Templates/Project Template.md",
-    "AllBases.base",
-    "Templates/Epic Template.md",
-    "Templates/Story Template.md",
-    "TvAST.md",
-    "Templates/Bug Template.md",
     "Templates/Task Template.md",
+    "Templates/Story Template.md",
+    "Templates/Project Template.md",
+    "Templates/Epic Template.md",
+    "Templates/Bug Template.md",
+    "README.md",
+    "AllBases.base",
+    "TvAST.md",
     "Changes.md",
     "Tvast.md",
     "Templates",
-    "Atlas",
+    "CompanyOS",
     "+"
   ]
 }

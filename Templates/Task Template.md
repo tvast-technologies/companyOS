@@ -11,5 +11,7 @@ Parent: "[[Story Template]]"
 Project: "[[Project Template]]"
 Is: PMS
 IsTemplate: Yes
+AssignedTo:
+DependencyTo:
 ---
  

@@ -9,6 +9,7 @@ Description:
 Topics:
 Is: PMS
 IsTemplate: Yes
+AssignedTo:
 ---
 
 # Project Name
